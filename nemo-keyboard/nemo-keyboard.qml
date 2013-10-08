@@ -96,13 +96,23 @@ Item {
                     y = -height
             }
 
-            EnglishLandscape {
+            Loader {
                 id: vkb_landscape
+                property bool isShifted
+                property bool isShiftLocked
+                property bool inSymView
+                property bool inSymView2
+                source: keyboard.layoutList[0] + "Landscape.qml"
                 visible: keyboard.layout == vkb_landscape
             }
 
-            EnglishPortrait {
+            Loader {
                 id: vkb_portrait
+                property bool isShifted
+                property bool isShiftLocked
+                property bool inSymView
+                property bool inSymView2
+                source: keyboard.layoutList[0] + "Portrait.qml"
                 visible: keyboard.layout == vkb_portrait
             }
 

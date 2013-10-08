@@ -38,11 +38,6 @@ Column {
     width: UI.LANDSCAPE_WIDTH
     height: UI.LANDSCAPE_HEIGHT
 
-    property bool isShifted
-    property bool isShiftLocked
-    property bool inSymView
-    property bool inSymView2
-
     property variant row1:["q1€", "w2£", "e3$", "r4¥", "t5₹", "y6%", "u7<", "i8>", "o9[", "p0]"]
     property variant row2: ["a*`", "s#^", "d+|", "f-_", "g=§", "h({", "j)}", "k?¿", "l!¡"]
     property variant row3: ["z@«", "x~»", "c/\"", "v\\“", "b'”", "n;„", "m:&"]

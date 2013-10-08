@@ -38,6 +38,11 @@ MouseArea {
     property Item layout
     property Item pressedKey
 
+    readonly property url currentDir: "./"
+    readonly property var layoutList: [
+        currentDir + "English"
+    ]
+
     onLayoutChanged: if (layout) layout.parent = keyboard
 
     // Can be changed to PreeditTestHandler to have another mode of input
